@@ -64,6 +64,8 @@ void pulse_gen(void)
 {
     if(pulse_generator_1.generation_active == PULSE_GEN_ACTIVE)
     {
+        LATAbits.LA0 = 1;
+        LATAbits.LA1 = 1;
         if (pulse_generator_1.time_down_counter > 0)
         {
             pulse_generator_1.time_down_counter = pulse_generator_1.time_down_counter - 1;  // Decrement every 100uS
@@ -82,6 +84,8 @@ void pulse_gen(void)
     }
     else
     {
+        LATAbits.LA0 = 0;
+        LATAbits.LA1 = 0;
         if(com_data.rx_packet_data.auto_manual != MANUAL)
         {
             WHEEL_M1 = 0;
@@ -95,6 +99,8 @@ void pulse_gen(void)
 
     if(pulse_generator_2.generation_active == PULSE_GEN_ACTIVE)
     {
+        LATAbits.LA2 = 1;
+        LATAbits.LA3 = 1;
         if (pulse_generator_2.time_down_counter > 0)
         {
             pulse_generator_2.time_down_counter = pulse_generator_2.time_down_counter - 1;  // Decrement every 100uS
@@ -113,6 +119,8 @@ void pulse_gen(void)
     }
     else
     {
+        LATAbits.LA2 = 0;
+        LATAbits.LA3 = 0;
         if(com_data.rx_packet_data.auto_manual != MANUAL)
         {
             WHEEL_M3 = 0;
@@ -125,6 +133,8 @@ void pulse_gen(void)
 
     if(pulse_generator_3.generation_active == PULSE_GEN_ACTIVE)
     {
+        LATAbits.LA5 = 1;
+        LATAbits.LA4 = 1;
         if (pulse_generator_3.time_down_counter > 0)
         {
             pulse_generator_3.time_down_counter = pulse_generator_3.time_down_counter - 1;  // Decrement every 100uS
@@ -143,6 +153,8 @@ void pulse_gen(void)
     }
     else
     {
+        LATAbits.LA4 = 0;
+        LATAbits.LA5 = 0;
         WHEEL_M5 = 0;
         WHEEL_S5 = 0;
         WHEEL_M6 = 0;
@@ -152,6 +164,8 @@ void pulse_gen(void)
 
     if(pulse_generator_4.generation_active == PULSE_GEN_ACTIVE)
     {
+        LATEbits.LE0 = 1;
+        LATEbits.LE1 = 1;
         if (pulse_generator_4.time_down_counter > 0)
         {
             pulse_generator_4.time_down_counter = pulse_generator_4.time_down_counter - 1;  // Decrement every 100uS
@@ -170,6 +184,8 @@ void pulse_gen(void)
     }
     else
     {
+        LATEbits.LE0 = 0;
+        LATEbits.LE1 = 0;
         WHEEL_M7 = 0;
         WHEEL_S7 = 0;
         WHEEL_M8 = 0;
@@ -471,7 +487,7 @@ void phy_generate_pulse2(void)
 }
 
 void phy_generate_pulse3(void)
-{
+{        
     switch(pulse_generator_3.next_state)    // Updating the States here for further operation
     {
         case PULSE_GEN_STATE_M1_LOW_TIME_COMPLETED:
@@ -522,8 +538,8 @@ void phy_generate_pulse3(void)
                 WHEEL_S5 = 0;
             }
             break;
-        default:
-            break;
+        default:            
+            break;           
     }
 }
 

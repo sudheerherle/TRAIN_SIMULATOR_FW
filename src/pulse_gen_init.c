@@ -63,6 +63,11 @@ void init_pulse_gen(void)
 
 void init_pulse_gen_ports(void)
 {
+    TRISA = 0;
+    ADCON1 = 0xff;
+    TRISEbits.RE0 = 0;
+    TRISEbits.RE1 = 0;
+    TRISEbits.RE2 = 0;
     // All pins are output
     TRIS_WHEEL_M1 = 0;
     TRIS_WHEEL_S1 = 0;

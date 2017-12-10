@@ -91,12 +91,12 @@ void APP_LEDUpdateUSBStatus(void)
             if(ledCount == 1)
             {
                 //LED_On(LED_USB_DEVICE_STATE);
-                LATEbits.LATE0 = 1;
+                LATCbits.LATC2 = 1;
             }
             else if(ledCount == 75)
             {
                 //LED_Off(LED_USB_DEVICE_STATE);
-                LATEbits.LATE0 = 0;
+                LATCbits.LATC2 = 0;
             }
             else if(ledCount > 150)
             {
@@ -110,12 +110,12 @@ void APP_LEDUpdateUSBStatus(void)
             if(ledCount == 1)
             {
                 //LED_On(LED_USB_DEVICE_STATE);
-                LATEbits.LATE0 = 1;
+                LATCbits.LATC2 = 1;
             }
             else if(ledCount == 50)
             {
                 //LED_Off(LED_USB_DEVICE_STATE);
-                LATEbits.LATE0 = 0;
+                LATCbits.LATC2 = 0;
             }
             else if(ledCount > 950)
             {

@@ -61,6 +61,8 @@
 #define TRIS_WDT_LED TRISEbits.TRISE1
 #define TRIS_CMD_LED TRISEbits.TRISE2
 
+# define LAT_PULSE_P3_M1 LATAbits.LATA5;
+# define LAT_PULSE_P3_M2 LATAbits.LATA4;
 
 
 
