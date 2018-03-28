@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/pic18f4550/production\TRAIN_SIMULATOR_FW.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>32768</length>
+      <used>11624</used>
+      <free>21144</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>2048</length>
+      <used>1199</used>
+      <free>849</free>
+    </memory>
+  </executable>
+</project>

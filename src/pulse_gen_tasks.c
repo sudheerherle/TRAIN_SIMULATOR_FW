@@ -43,7 +43,7 @@ void pulse_gen_tasks(void)
         {
             com_timers.wdt = 0;
             CLRWDT();
-            LAT_WDT_LED = ~LAT_WDT_LED;
+//            LAT_WDT_LED = ~LAT_WDT_LED;
         }
 
 

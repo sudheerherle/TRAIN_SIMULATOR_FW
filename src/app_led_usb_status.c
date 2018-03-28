@@ -90,15 +90,15 @@ void APP_LEDUpdateUSBStatus(void)
              * On for 75ms, off for 75ms, then reset/repeat. */
             if(ledCount == 1)
             {
-                //LED_On(LED_USB_DEVICE_STATE);
+//                LED_On(LED_USB_DEVICE_STATE);
                 LATCbits.LATC2 = 1;
             }
-            else if(ledCount == 75)
+            else if(ledCount == 150)
             {
-                //LED_Off(LED_USB_DEVICE_STATE);
+//                LED_Off(LED_USB_DEVICE_STATE);
                 LATCbits.LATC2 = 0;
             }
-            else if(ledCount > 150)
+            else if(ledCount > 300)
             {
                 ledCount = 0;
             }
