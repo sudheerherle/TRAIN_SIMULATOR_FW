@@ -4,16 +4,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/GitHub/TRAIN_SIMULATOR_FW/src/app_led_usb_status.c</file>
-            <file>file:/D:/GitHub/TRAIN_SIMULATOR_FW/src/main.c</file>
-            <file>file:/D:/GitHub/TRAIN_SIMULATOR_FW/src/framework/usb/src/usb_device.c</file>
-            <file>file:/D:/GitHub/TRAIN_SIMULATOR_FW/src/system_config/picdem_fs_usb/system.c</file>
-            <file>file:/D:/GitHub/TRAIN_SIMULATOR_FW/src/app_device_cdc_basic.c</file>
-            <file>file:/D:/GitHub/TRAIN_SIMULATOR_FW/src/pulse_gen_init.c</file>
-            <file>file:/D:/GitHub/TRAIN_SIMULATOR_FW/src/pulse_gen_tasks.c</file>
-            <file>file:/D:/GitHub/TRAIN_SIMULATOR_FW/src/framework/usb/src/usb_device_cdc.c</file>
-            <file>file:/D:/GitHub/TRAIN_SIMULATOR_FW/src/pulse_gen.h</file>
-            <file>file:/D:/GitHub/TRAIN_SIMULATOR_FW/src/pulse_gen_com_tasks.c</file>
+            <file>file:/D:/Others/TRAIN_SIMULATOR_FW/TRAIN_SIMULATOR_FW.X/nbproject/Makefile-pic18f4550.mk</file>
+            <file>file:/D:/Others/TRAIN_SIMULATOR_FW/src/system_config/picdem_fs_usb/system.c</file>
+            <file>file:/D:/Others/TRAIN_SIMULATOR_FW/src/framework/usb/usb_device_cdc.h</file>
+            <file>file:/D:/Others/TRAIN_SIMULATOR_FW/src/framework/usb/src/usb_device.c</file>
+            <file>file:/D:/Others/TRAIN_SIMULATOR_FW/src/framework/usb/src/usb_device_cdc.c</file>
         </group>
     </open-files>
 </project-private>
