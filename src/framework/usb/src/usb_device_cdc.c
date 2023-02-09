@@ -119,8 +119,8 @@
 #endif
 
 /** V A R I A B L E S ********************************************************/
-volatile unsigned char cdc_data_tx[CDC_DATA_IN_EP_SIZE] IN_DATA_BUFFER_ADDRESS_TAG;
-volatile unsigned char cdc_data_rx[CDC_DATA_OUT_EP_SIZE] OUT_DATA_BUFFER_ADDRESS_TAG;
+volatile unsigned char cdc_data_tx[CDC_DATA_IN_EP_SIZE] ;//IN_DATA_BUFFER_ADDRESS_TAG;
+volatile unsigned char cdc_data_rx[CDC_DATA_OUT_EP_SIZE];// OUT_DATA_BUFFER_ADDRESS_TAG;
 
 typedef union
 {

@@ -98,7 +98,7 @@ void SYSTEM_Initialize( SYSTEM_STATE state )
 			
 			
 #if defined(__XC8)
-void interrupt SYS_InterruptHigh(void)
+void __interrupt() SYS_InterruptHigh(void)
 {
     #if defined(USB_INTERRUPT)
         USBDeviceTasks();

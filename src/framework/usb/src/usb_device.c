@@ -158,13 +158,13 @@ volatile bool USBDeferOUTDataStagePackets;
     #pragma udata USB_BDT=USB_BDT_ADDRESS
 #endif
 
-volatile BDT_ENTRY BDT[BDT_NUM_ENTRIES] BDT_BASE_ADDR_TAG;
+volatile BDT_ENTRY BDT[BDT_NUM_ENTRIES];// BDT_BASE_ADDR_TAG;
 
 /********************************************************************
  * EP0 Buffer Space
  *******************************************************************/
-volatile CTRL_TRF_SETUP SetupPkt CTRL_TRF_SETUP_ADDR_TAG;
-volatile uint8_t CtrlTrfData[USB_EP0_BUFF_SIZE] CTRL_TRF_DATA_ADDR_TAG;
+volatile CTRL_TRF_SETUP SetupPkt;// CTRL_TRF_SETUP_ADDR_TAG;
+volatile uint8_t CtrlTrfData[USB_EP0_BUFF_SIZE];// CTRL_TRF_DATA_ADDR_TAG;
 
 /********************************************************************
  * non-EP0 Buffer Space
